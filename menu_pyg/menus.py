@@ -52,4 +52,4 @@ class Menu(object):
 
         for r in self.item_renders:
             self.screen.blit(r, (self.x, self.y + y_increment))
-            y_increment = r.get_height()
+            y_increment += r.get_height()
