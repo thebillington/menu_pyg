@@ -1,3 +1,1 @@
-def test():
-    print("TESTING PACKAGE INSTALLER")
-    print("SUCCESS")
+from menuitems import *
