@@ -24,7 +24,7 @@ class Menu(object):
         self.colour = colour
 
     #Function to render all of the fonts
-    def render(self):
+    def render_items(self):
 
         self.item_renders = []
 
@@ -38,9 +38,18 @@ class Menu(object):
         self.menu_items.append(item)
 
         #Render the fonts
-        self.render()
+        self.render_items()
 
     def list_items(self):
 
         for item in self.menu_items:
             print item.text
+
+    def render(self):
+
+        #Store how much to move the y by for each item
+        y_increment = 0
+
+        for r in self.item_renders:
+            self.screen.blit(r, (self.x, self.y + y_increment))
+            y_increment = r.get_height()
