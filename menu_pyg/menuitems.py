@@ -3,5 +3,6 @@ class menuItem(object):
 
     def __init__(self, text, f):
 
-        print("Menu item created: {}".format(text))
-        f()
+        #Store the text and function
+        self.item_text = text
+        self.function = f
