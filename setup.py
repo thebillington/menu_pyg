@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='menu_pyg',
-      version='0.1',
+      version='0.101',
       description='Package to provide a menu sysem for Pygame (Python 2.7)',
       url='http://github.com/thebillington/menu_pyg',
       author='thebillington',
